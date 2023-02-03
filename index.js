@@ -5,7 +5,7 @@ const program = require('commander')
 const puppeteer = require("puppeteer");
 const path = require('path')
 
-const { thumbnail, directoryExists, readdir, mkdir, rm } = require('./lib')
+const { , directoryExists, readdir, mkdir, rm } = require('./lib')
 
 program
   .version('1.0.0')
