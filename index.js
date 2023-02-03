@@ -27,13 +27,10 @@ const main = async () => {
 
     // Use user input or default options
     const { weburl, destination } = program
-
-    console.log('weburl',weburl);
     // const srcPath = path.join(cwd, source)
     //const destPath = path.join(cwd, destination)
 
     const destPath = destination;
- console.log('destPath',destPath);
     // Remove destination directory is it exists
     if (directoryExists(destPath)) {
       await rm(destPath)
@@ -67,7 +64,7 @@ for( let i = 0; i < hrefs.length; i++){
   if( validateURL(hrefs[i])){
  
 
-    console.log('log',hrefs[i]);
+    console.log('URL',hrefs[i]);
           await page.goto(`${hrefs[i]}`, {
       'waitUntil':'networkidle0'
     });

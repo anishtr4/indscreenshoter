@@ -1,7 +1,7 @@
 {
   "name": "node-cli",
   "version": "1.0.0",
-  "description": "Command line tutorial",
+  "description": "Bulk Screenshot Command line tool",
   "main": "index.js",
   "bin": {
     "indscreenshoter": "./index.js"
@@ -11,15 +11,13 @@
   },
   "keywords": [],
   "author": {
-    "name": "benjaminadk",
-    "email": "benjaminadk@gmail.com",
+    "name": "Anish",
+    "email": "anishtr4@gmail.com",
     "url": "https://github.com/benjaminadk"
   },
   "license": "ISC",
   "dependencies": {
     "commander": "4.1.0",
-    "jimp": "0.9.3",
     "puppeteer": "^19.6.3",
-    "rimraf": "3.0.0"
   }
 }
