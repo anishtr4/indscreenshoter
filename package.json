@@ -4,7 +4,7 @@
   "description": "Command line tutorial",
   "main": "index.js",
   "bin": {
-    "make-thumbs": "./index.js"
+    "indscreenshot": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   "dependencies": {
     "commander": "4.1.0",
     "jimp": "0.9.3",
+    "puppeteer": "^19.6.3",
     "rimraf": "3.0.0"
   }
 }
