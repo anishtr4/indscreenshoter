@@ -16,7 +16,7 @@ program
   .option(
     '-d,--destination [folder]',
     'Directory to be created for thumbnails',
-    'thumbnails'
+    'screenshots'
   )
   .parse(process.argv)
 
@@ -30,8 +30,10 @@ const main = async () => {
 
     console.log('weburl',weburl);
     // const srcPath = path.join(cwd, source)
-    const destPath = path.join(cwd, destination)
+    //const destPath = path.join(cwd, destination)
 
+    const destPath = destination;
+ console.log('destPath',destPath);
     // Remove destination directory is it exists
     if (directoryExists(destPath)) {
       await rm(destPath)
@@ -70,8 +72,10 @@ for( let i = 0; i < hrefs.length; i++){
       'waitUntil':'networkidle0'
     });
 
+
+const dest = path.join(destPath, i+"nyt-puppeteer.png")
  
-    await page.screenshot({ path: i+"nyt-puppeteer.png", fullPage: true });
+    await page.screenshot({ path: dest, fullPage: true });
 
 }
 }
