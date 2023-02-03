@@ -9,7 +9,7 @@ const { thumbnail, directoryExists, readdir, mkdir, rm } = require('./lib')
 
 program
   .version('1.0.0')
-  .name('indscreenshot')
+  .name('indscreenshoter')
   .description('An image resizer to make thumbnails')
   .option('-url,--weburl ,<char>', 'web url')
  // .option('-d,--destination [folder]', 'Source images directory', 'images')
